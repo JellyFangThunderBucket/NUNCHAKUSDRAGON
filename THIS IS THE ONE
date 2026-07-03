@@ -1,12 +1,183 @@
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
-<script>hljs.highlightAll();</script>
-
-▼ <html lang="meow">
+<!DOCTYPE html>
+<html lang="meow">
 
   <head>
     <meta charset="UTF-8">
     <title>bobcat.js</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <style>
+      body {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #4facfe 75%, #00f2fe 100%);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+        font-family: 'Courier New', monospace;
+        margin: 0;
+        padding: 20px;
+        color: #fff;
+      }
+
+      @keyframes gradient {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+      }
+
+      #consciousness {
+        background: rgba(0, 0, 0, 0.7);
+        border-radius: 15px;
+        padding: 30px;
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+      }
+
+      .narrator {
+        color: #ff6b9d;
+        font-weight: bold;
+        font-size: 1.1em;
+        text-shadow: 0 0 10px #ff6b9d;
+      }
+
+      .internal-thought, .internalThought {
+        color: #00ff88;
+        font-style: italic;
+        margin: 20px 0;
+        padding: 15px;
+        border-left: 4px solid #00ff88;
+        text-shadow: 0 0 8px #00ff88;
+      }
+
+      console\.log {
+        display: block;
+        background: rgba(100, 200, 255, 0.2);
+        color: #64c8ff;
+        padding: 10px 15px;
+        margin: 10px 0;
+        border-radius: 5px;
+        font-size: 0.9em;
+        text-shadow: 0 0 5px #64c8ff;
+      }
+
+      video {
+        color: #ffd700;
+        display: block;
+        margin: 15px 0;
+        text-shadow: 0 0 10px #ffd700;
+        font-weight: bold;
+      }
+
+      script {
+        display: block;
+        background: rgba(255, 150, 100, 0.15);
+        color: #ff9664;
+        padding: 15px;
+        margin: 15px 0;
+        border-radius: 8px;
+        white-space: pre-wrap;
+        overflow-x: auto;
+        text-shadow: 0 0 5px #ff9664;
+      }
+
+      .decisionTree {
+        background: rgba(200, 100, 255, 0.2);
+        color: #d084ff;
+        padding: 15px;
+        margin: 15px 0;
+        border-radius: 8px;
+        text-shadow: 0 0 5px #d084ff;
+      }
+
+      runtime {
+        display: block;
+        color: #00ff00;
+        background: rgba(0, 255, 0, 0.1);
+        padding: 15px;
+        margin: 15px 0;
+        border-radius: 8px;
+        text-shadow: 0 0 10px #00ff00;
+        font-weight: bold;
+      }
+
+      event {
+        display: block;
+        color: #ffff00;
+        background: rgba(255, 255, 0, 0.1);
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 5px;
+        text-shadow: 0 0 5px #ffff00;
+      }
+
+      warning {
+        display: block;
+        color: #ff4444;
+        background: rgba(255, 68, 68, 0.2);
+        padding: 12px;
+        margin: 12px 0;
+        border-radius: 5px;
+        font-weight: bold;
+        text-shadow: 0 0 8px #ff4444;
+        border: 2px solid #ff4444;
+      }
+
+      exception {
+        display: block;
+        color: #ff00ff;
+        background: rgba(255, 0, 255, 0.15);
+        padding: 15px;
+        margin: 15px 0;
+        border-radius: 8px;
+        text-shadow: 0 0 10px #ff00ff;
+        font-weight: bold;
+      }
+
+      stacktrace {
+        display: block;
+        color: #00ffff;
+        background: rgba(0, 255, 255, 0.1);
+        padding: 12px;
+        margin: 12px 0;
+        border-radius: 5px;
+        text-shadow: 0 0 8px #00ffff;
+        font-size: 0.9em;
+      }
+
+      network {
+        display: block;
+        color: #ff8800;
+        background: rgba(255, 136, 0, 0.15);
+        padding: 15px;
+        margin: 15px 0;
+        border-radius: 8px;
+        text-shadow: 0 0 5px #ff8800;
+      }
+
+      performance {
+        display: block;
+        color: #ff69b4;
+        background: rgba(255, 105, 180, 0.15);
+        padding: 15px;
+        margin: 15px 0;
+        border-radius: 8px;
+        text-shadow: 0 0 5px #ff69b4;
+      }
+
+      footer {
+        margin-top: 40px;
+        padding-top: 20px;
+        border-top: 2px solid rgba(255, 255, 255, 0.3);
+      }
+
+      footer small {
+        color: #b0b0ff;
+        text-shadow: 0 0 5px #b0b0ff;
+      }
+
+      /* Smooth transitions */
+      * {
+        transition: text-shadow 0.3s ease;
+      }
+    </style>
     <script src="survival.min.js"></script>
     <script src="wildernesses.js"></script>
     <meta name="species" content="definitely_not_bobcat">
