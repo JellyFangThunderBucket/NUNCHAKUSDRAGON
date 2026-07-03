@@ -1,0 +1,204 @@
+▼ <html lang="meow">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>bobcat.js</title>
+    <script src="survival.min.js"></script>
+    <script src="wildernesses.js"></script>
+    <meta name="species" content="definitely_not_bobcat">
+  </head>
+
+  <body>
+
+    <div id="consciousness">
+
+      <!-- 00:00:00 -->
+      <span class="narrator">
+        "I found a baby bobcat in the wildernesses..."
+      </span>
+
+      <div class="internal-thought visible">
+        Ah yes...
+        Here we go again.
+
+        First of all...
+        I wasn't "found."
+
+        I was existing.
+
+        There's a difference.
+      </div>
+
+      <console.log>
+        [INFO] Human confidence: 100%
+        [INFO] Human accuracy: 14%
+      </console.log>
+
+      <!-- Long awkward pause -->
+
+      <video id="kitten_face"
+             state="looking_directly_into_camera"
+             emotion="questioning_everything"/>
+
+      <script>
+
+        function processNarration(){
+
+            let statement =
+              "I found a baby bobcat in the wildernesses";
+
+            kitten.internalResponse = `
+                Brother...
+
+                I am seventy years old.
+
+                I pay emotional taxes.
+
+                I've watched civilizations invent
+                and abandon carpet.
+
+                Stop introducing me like I'm new.
+            `;
+
+        }
+
+      </script>
+
+      <div class="decisionTree">
+
+        if (human.isDistracted){
+            escape();
+        }
+
+      </div>
+
+      <runtime>
+
+        Escape Attempt...
+        Initializing...
+
+        █████████░░ 82%
+
+      </runtime>
+
+      <event>
+
+        kitten.turnLeft();
+
+      </event>
+
+      <event>
+
+        kitten.run();
+
+      </event>
+
+      <warning>
+
+        Human Hand Detected.
+
+      </warning>
+
+      <exception>
+
+        Uncaught FatalError:
+        Retirement denied.
+
+      </exception>
+
+      <stacktrace>
+
+        at freedom.js:27
+        at wildernesses.js:104
+        at giantHand.capture()
+
+      </stacktrace>
+
+      <span class="narrator">
+        "I saved him from a fatality death."
+      </span>
+
+      <script>
+
+        kitten.sigh();
+
+        console.log(
+          "Fatality death..."
+        );
+
+        console.log(
+          "Those are, in fact..."
+        );
+
+        console.log(
+          "the same thing."
+        );
+
+        console.log(
+          "Scientlists are going to love this one."
+        );
+
+      </script>
+
+      <div class="internalThought">
+
+        I wasn't dying.
+
+        I was leaving.
+
+        There's a shocking difference.
+
+      </div>
+
+      <network>
+
+        GET /dignity
+
+        404 Not Found
+
+      </network>
+
+      <performance>
+
+        Emotional Damage:
+        98%
+
+        Actual Danger:
+        0%
+
+      </performance>
+
+      <script>
+
+        while(human.isNarrating){
+
+            kitten.stareIntoDistance();
+
+            kitten.regretEverything();
+
+        }
+
+      </script>
+
+      <footer>
+
+        <small>
+
+          This kitten has been alive since before
+          Bluetooth.
+
+          He still remembers when scientists
+          were called scientlists.
+
+          He has accepted that history will
+          remember him incorrectly.
+
+        </small>
+
+      </footer>
+
+    </div>
+
+  </body>
+
+</html>
